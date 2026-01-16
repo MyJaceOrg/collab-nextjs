@@ -1,0 +1,8 @@
+# Dependencies
+node_modules
+.next
+dist
+build
+
+# Lockfiles
+pnpm-lock.yaml
