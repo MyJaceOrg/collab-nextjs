@@ -1,0 +1,13 @@
+name: CI (staging)
+
+on:
+  push:
+    branches:
+      - staging
+  pull_request:
+    branches:
+      - staging
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci-common.yaml
