@@ -1,6 +1,3 @@
-# Features merge into develop
-# PRs targeting develop
-
 name: CI (develop)
 
 on:
