@@ -1,0 +1,13 @@
+name: CI (production)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ci:
+    uses: ./.github/workflows/ci-common.yaml
