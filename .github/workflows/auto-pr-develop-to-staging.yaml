@@ -1,0 +1,24 @@
+name: "Auto PR: develop → staging"
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create or update PR to staging
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: staging
+          head: develop
+          title: "Promote develop to staging"
+          body: "This PR was automatically generated to promote the latest changes from develop into staging."
+          labels: "auto-promotion, staging"
