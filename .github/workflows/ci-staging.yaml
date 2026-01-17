@@ -1,9 +1,6 @@
 name: CI (staging)
 
 on:
-  push:
-    branches:
-      - staging
   pull_request:
     branches:
       - staging
