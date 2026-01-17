@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "format": "prettier .",
-    "format:check": "prettier . --check",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,yml}\"",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
